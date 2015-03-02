@@ -11,76 +11,83 @@
 
 </head>
 <body>
+<div>
 	<form >
+
 		<div>
 		<h1> Sign up for Whoo!</h1>
-		<h3>50 projects, 500 images, 10 videos, domain binding, and technical support</h3>
+		<h3>50 projects, 500 images, 10 videos, domain binding, and technical support</h3
 		</div>
 
 
 		<ol>
+
+		<!-- Step 1-->
 		<li>
 		<fieldset>
 			<legend>First, name your portfolio</legend>
 			<div>
-				<label for="portfolio-name">Portfolio name</label>
+				<label for="portfolio-name">Portfolio name</label><br>
 				<input type="text" id="portfolio-name" />
 			</div>
 			<div>
-				<label for="web-address">Portfolio address</label>
+				<label for="web-address">Portfolio address</label><br>
 				<input type="text" id="web-address" />
 			</div>
 		</fieldset>
 		</li>
 
+		<!-- Step 2-->
 		<li>
 		<fieldset>
 			<legend> Now, enter your account details</legend>
 			<div>
-				<label for="name">Name</label>
+				<label for="name">Name</label><br>
 				<input type="text" id="name" />
 			</div>
 			<div>
-				<label for="email">Email</label>
-				<input type="email" id="email" />
+				<label for="email">Email</label><br>
+				<input type="email" id="email" />.sample.com
+				<p>NOTE: We'll never share your email, promise.</p>
 			</div>
 			<div>
-				<label for="password">Password</label>
+				<label for="password">Password</label><br>
 				<input type="password" id="password" />
 			</div>
 		</fieldset>
 		</li>
 
+		<!-- Step 3-->
 		<li>
 		<fieldset>
 			<legend>Finally, enter your payment information</legend>
 			<div>
-				<label for="card-number">Card Number</label>
+				<label for="card-number">Card Number</label><br>
 				<input type="text" id="card-number" />
 			</div>
 			<div>
-				<label for="security-code">Security Code</label>
+				<label for="security-code">Security Code</label><br>
 				<input type="email" id="security-code" />
 			</div>
-			<div> <label for="expiration-date">Expiration Date</label>
+			<div> <label for="expiration-date">Expiration Date</label><br>
 					<select id="month" name="month">
-					<option value="Month" selcted>Month</option>
-					<option value="1">January</option>
-					<option value="2">February</option>
-					<option value="3">March</option>
-					<option value="4">April</option>
-					<option value="5">May</option>
-					<option value="6">June</option>
-					<option value="7">July</option>
-					<option value="8">August</option>
-					<option value="9">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
+					<option value="month" selected="selected" disabled>Month</option>
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
 					</select>
 
 					<select id="year" name="year">
-					<option value="Month" selcted>Year</option>
+					<option value="year" selected="selected" disabled>Year</option>
 					<option value="1">2015</option>
 					<option value="2">2016</option>
 					<option value="3">2017</option>
@@ -93,12 +100,13 @@
 		</ol>
 
 
-			
+			<!-- Button-->
 			<div class="button">
 				<button type="submit">Create your portfolio</button>
 			</div>
 		
 	</form>
+	</div>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
