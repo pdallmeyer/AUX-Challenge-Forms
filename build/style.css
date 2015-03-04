@@ -34,18 +34,23 @@ body {
 	background-color:#f3f5f5;
 	padding: 15px;
 
-}
+	}
 
-ol { 
-	
-	list-style-type: decimal;
-}
 
 ul {
 	list-style-type: none;
-
+	display: inline;
 }
 
 fieldset {
 	border: none;
+}
+
+fieldset.radios {
+	display:inline;
+
+}
+
+legend.creditcards {
+	display: none;
 }

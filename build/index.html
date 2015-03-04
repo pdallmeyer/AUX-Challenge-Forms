@@ -29,7 +29,7 @@
 					<section>
 						
 							<fieldset>
-								<legend>
+								<legend class="steps">
 									<span class="step-number">1</span>
 								First, name your portfolio 
 								</legend>
@@ -55,29 +55,31 @@
 					<section>
 						
 							<fieldset>
-								<legend>
+								<legend class =steps>
 								<span class="step-number">2</span>
 								Now, enter your account details
 								</legend>
 									<div class="step-containers">
 										<p>
-												<label for="name">
-												<span>Name</span>
-												<input type="text" id="name" required/>
-												</label>
+											<label for="name">
+											<span>Name</span>
+											<input type="text" id="name" required/>
+											</label>
 										</p>
 										<p>
-												<label for="email">
-												<span>Email</span>
-												<input type="email" id="email" required/>
-												<p>NOTE: We'll never share your email, promise.</p>
-												</label>
+											<label for="email">
+											<span>Email</span>
+											<input type="email" id="email" required/>
+												<p>
+												NOTE: We'll never share your email, promise.
+												</p>
+											</label>
 										</p>
 										<p>
-												<label for="password">
-												<span>Password</span>
-												<input type="password" id="password" required/>
-												</label>
+											<label for="password">
+											<span>Password</span>
+											<input type="password" id="password" required/>
+											</label>
 										</p>
 										
 									</div>
@@ -88,74 +90,74 @@
 					<section>
 						
 							<fieldset>
-								<legend>
+								<legend class=steps>
 								<span class="step-number">3</span>
 								Finally, enter your payment information
 								</legend>
 									<div class="step-containers">
-										<ul> <!--start ul of payment information-->
-											<li><!--start li card number-->
-												<label for="card-number">
-													<span>Card Number</span>										<input type="text" id="card-number" required/>
-														
-														<fieldset>
-															<legend>Credit Cards</legend>
-															<ul id="radios">
-																<li>
-																		<input id="Amex" type="radio" name="CC" value="Amex">
-																		<label for="Amex">Amex</label>
-																	</li>
-																	<li>
-																		<input id="Visa" type="radio" name="CC" value="Visa" checked>
-																		<label for="Visa">Visa</label>
-																	</li>
-																	<li>
-																		<input id="Discover" type="radio" name="CC" value="Discover">
-																		<label for="Discover">Discover</label>
-																	</li>	
-																	<li>
-																		<input id="Mastercard" type="radio" name="CC" value="Mastercard">
-																		<label for="Mastercard">Mastercard</label>
-																	</li>
-															</ul>
-														</fieldset>
-													</label>
-											</li><!--end li card number-->
-											<li><!--start li security code-->
-												<label for="security-code">
-												<span>Security Code</span>
-												<input type="text" id="security-code" required />
-												</label>
-											</li><!--end li security code-->
-											<li> <!--start li expiration date-->
-												<label for="expiration-date">
-													<span>Expiration Date</span>
-														<select id="month" name="month" required>
-															<option value="" selected disabled>Month</option>
-															<option>January</option>
-															<option>February</option>
-															<option>March</option>
-															<option>April</option>
-															<option>May</option>
-															<option>June</option>
-															<option>July</option>
-															<option>August</option>
-															<option>September</option>
-															<option>October</option>
-															<option>November</option>
-															<option>December</option>
-														</select>
+												<p
+													<label for="card-number">
+														<span>Card Number</span>										<input type="text" id="card-number" required/>
 
-														<select id="year" name="year" required>
-															<option value="" selected="selected" disabled>Year</option>
-															<option>2015</option>
-															<option>2016</option>
-															<option>2017</option>
-															<option>2018</option>
-															<option>2019</option>
-														</select>
-												</label>
-											</li><!--end li expiration date-->
+															
+															<fieldset class="radios">
+																<legend class="creditcards">Credit Cards</legend>
+																<ul id="radios">
+																	<li>
+																			<input id="Amex" type="radio" name="CC" value="Amex">
+																			<label for="Amex">Amex</label>
+																		</li>
+																		<li>
+																			<input id="Visa" type="radio" name="CC" value="Visa" checked>
+																			<label for="Visa">Visa</label>
+																		</li>
+																		<li>
+																			<input id="Discover" type="radio" name="CC" value="Discover">
+																			<label for="Discover">Discover</label>
+																		</li>	
+																		<li>
+																			<input id="Mastercard" type="radio" name="CC" value="Mastercard">
+																			<label for="Mastercard">Mastercard</label>
+																		</li>
+																</ul>
+															</fieldset>
+														</label>
+												</p>
+												<p>
+													<label for="security-code">
+													<span>Security Code</span>
+													<input type="text" id="security-code" required />
+													</label>
+												</p>
+												<p>
+													<label for="expiration-date">
+														<span>Expiration Date</span>
+															<select id="month" name="month" required>
+																<option value="" selected disabled>Month</option>
+																<option>January</option>
+																<option>February</option>
+																<option>March</option>
+																<option>April</option>
+																<option>May</option>
+																<option>June</option>
+																<option>July</option>
+																<option>August</option>
+																<option>September</option>
+																<option>October</option>
+																<option>November</option>
+																<option>December</option>
+															</select>
+
+															<select id="year" name="year" required>
+																<option value="" selected="selected" disabled>Year</option>
+																<option>2015</option>
+																<option>2016</option>
+																<option>2017</option>
+																<option>2018</option>
+																<option>2019</option>
+															</select>
+													</label>
+												</p>
 										</ul><!--end ul payment information-->
 									<div class="step-containers">
 							</fieldset>
