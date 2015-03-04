@@ -5,6 +5,7 @@
   
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="style.css" rel="stylesheet">
   
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
@@ -13,145 +14,158 @@
 
 <body>
 
-	<div id ="main">
-		<header>
-			<h1>Sign up for Whoo!</h1>
-			<p id="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
-		</header>
+	<div class="main-container">
+		<div class="header-container">
+			<header>
+				<h1>Sign up for Whoo!</h1>
+				<p id="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+			</header>
+		</div>
 		<form id="form" method="get">
-			<div id="form-box">
-				<ol>
+			<div class="form-container">
+				
 
 			<!-- Step 1-->
 					<section>
-						<li>
+						
 							<fieldset>
-								<legend class="steps">First, name your portfolio </legend>
-									<ul>
-										<li>
-											<label for="portfolio-name">
-											<span>Portfolio name</span>
-											<input type="text" id="portfolio-name" required/>
-											</label>
-										</li>
-										<li>
-											<label for="web-address">
-											<span>Portfolio address</span>
-											<input type="url" id="web-address" placeholder=".sample.com"required/>
-											</label>
-										</li>
-									</ul>
+								<legend>
+									<span class="step-number">1</span>
+								First, name your portfolio 
+								</legend>
+									<div class="step-containers">
+											<p>
+												<label for="portfolio-name">
+												<span>Portfolio name</span>
+												<input type="text" id="portfolio-name" required/>
+												</label>
+											</p>
+											<p>
+												<label for="web-address">
+												<span>Portfolio address</span>
+													<input type="url" id="web-address" placeholder=".sample.com"required/>
+												</label>
+											</p>
+									</div>
 							</fieldset>
-						</li>
+						
 					</section>
 
 			<!-- Step 2-->
 					<section>
-						<li>
+						
 							<fieldset>
-								<legend class="steps">Now, enter your account details</legend>
-									<ul>
-										<li>
-											<label for="name">
-											<span>Name</span>
-											<input type="text" id="name" required/>
-											</label>
-										</li>
-										<li>
-											<label for="email">
-											<span>Email</span>
-											<input type="email" id="email" required/>
-											<p>NOTE: We'll never share your email, promise.</p>
-											</label>
-										</li>
-										<li>
-											<label for="password">
-											<span>Password</span>
-											<input type="password" id="password" required/>
-											</label>
-										</li>
-									</ul>
+								<legend>
+								<span class="step-number">2</span>
+								Now, enter your account details
+								</legend>
+									<div class="step-containers">
+										<p>
+												<label for="name">
+												<span>Name</span>
+												<input type="text" id="name" required/>
+												</label>
+										</p>
+										<p>
+												<label for="email">
+												<span>Email</span>
+												<input type="email" id="email" required/>
+												<p>NOTE: We'll never share your email, promise.</p>
+												</label>
+										</p>
+										<p>
+												<label for="password">
+												<span>Password</span>
+												<input type="password" id="password" required/>
+												</label>
+										</p>
+										
+									</div>
 							</fieldset>
-						</li>
+						
 					</section>
 			<!-- Step 3-->
 					<section>
-						<li>
+						
 							<fieldset>
-								<legend class="steps">Finally, enter your payment information</legend>
-									<ul> <!--start ul of payment information-->
-										<li><!--start li card number-->
-											<label for="card-number">
-												<span>Card Number</span>										<input type="text" id="card-number" required/>
-													
-													<fieldset>
-														<legend>Credit Cards</legend>
-														<ul id="radios">
-															<li>
-																	<input id="Amex" type="radio" name="CC" value="Amex">
-																	<label for="Amex">Amex</label>
-																</li>
+								<legend>
+								<span class="step-number">3</span>
+								Finally, enter your payment information
+								</legend>
+									<div class="step-containers">
+										<ul> <!--start ul of payment information-->
+											<li><!--start li card number-->
+												<label for="card-number">
+													<span>Card Number</span>										<input type="text" id="card-number" required/>
+														
+														<fieldset>
+															<legend>Credit Cards</legend>
+															<ul id="radios">
 																<li>
-																	<input id="Visa" type="radio" name="CC" value="Visa" checked>
-																	<label for="Visa">Visa</label>
-																</li>
-																<li>
-																	<input id="Discover" type="radio" name="CC" value="Discover">
-																	<label for="Discover">Discover</label>
-																</li>	
-																<li>
-																	<input id="Mastercard" type="radio" name="CC" value="Mastercard">
-																	<label for="Mastercard">Mastercard</label>
-																</li>
-														</ul>
-													</fieldset>
+																		<input id="Amex" type="radio" name="CC" value="Amex">
+																		<label for="Amex">Amex</label>
+																	</li>
+																	<li>
+																		<input id="Visa" type="radio" name="CC" value="Visa" checked>
+																		<label for="Visa">Visa</label>
+																	</li>
+																	<li>
+																		<input id="Discover" type="radio" name="CC" value="Discover">
+																		<label for="Discover">Discover</label>
+																	</li>	
+																	<li>
+																		<input id="Mastercard" type="radio" name="CC" value="Mastercard">
+																		<label for="Mastercard">Mastercard</label>
+																	</li>
+															</ul>
+														</fieldset>
+													</label>
+											</li><!--end li card number-->
+											<li><!--start li security code-->
+												<label for="security-code">
+												<span>Security Code</span>
+												<input type="text" id="security-code" required />
 												</label>
-										</li><!--end li card number-->
-										<li><!--start li security code-->
-											<label for="security-code">
-											<span>Security Code</span>
-											<input type="text" id="security-code" required />
-											</label>
-										</li><!--end li security code-->
-										<li> <!--start li expiration date-->
-											<label for="expiration-date">
-												<span>Expiration Date</span>
-													<select id="month" name="month" required>
-														<option value="" selected disabled>Month</option>
-														<option>January</option>
-														<option>February</option>
-														<option>March</option>
-														<option>April</option>
-														<option>May</option>
-														<option>June</option>
-														<option>July</option>
-														<option>August</option>
-														<option>September</option>
-														<option>October</option>
-														<option>November</option>
-														<option>December</option>
-													</select>
+											</li><!--end li security code-->
+											<li> <!--start li expiration date-->
+												<label for="expiration-date">
+													<span>Expiration Date</span>
+														<select id="month" name="month" required>
+															<option value="" selected disabled>Month</option>
+															<option>January</option>
+															<option>February</option>
+															<option>March</option>
+															<option>April</option>
+															<option>May</option>
+															<option>June</option>
+															<option>July</option>
+															<option>August</option>
+															<option>September</option>
+															<option>October</option>
+															<option>November</option>
+															<option>December</option>
+														</select>
 
-													<select id="year" name="year" required>
-														<option value="" selected="selected" disabled>Year</option>
-														<option>2015</option>
-														<option>2016</option>
-														<option>2017</option>
-														<option>2018</option>
-														<option>2019</option>
-													</select>
-											</label>
-										</li><!--end li expiration date-->
-									</ul><!--end ul payment information-->
+														<select id="year" name="year" required>
+															<option value="" selected="selected" disabled>Year</option>
+															<option>2015</option>
+															<option>2016</option>
+															<option>2017</option>
+															<option>2018</option>
+															<option>2019</option>
+														</select>
+												</label>
+											</li><!--end li expiration date-->
+										</ul><!--end ul payment information-->
+									<div class="step-containers">
 							</fieldset>
-						</li>
-					</ol>
+						
+					
 
 				</section>
 				<!-- Button-->
 				<div class="button">
 					<button type="submit">Create your portfolio</button>
-
 				</div>
 			</div>
 		</form>

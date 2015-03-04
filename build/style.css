@@ -1,0 +1,51 @@
+body {
+	background-color: #b3e3ff;
+	}
+
+.main-container {
+	position: absolute;
+	left: 15%;
+	right: 40%;
+	width: 600px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	}
+
+.header-container {
+	background-color: #12637c;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	
+	}
+
+.form-container {
+	top: 0px;
+	padding-top:0px;
+	
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	}
+
+.step-containers { 
+	background-color:#f3f5f5;
+	padding: 15px;
+
+}
+
+ol { 
+	
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: none;
+
+}
+
+fieldset {
+	border: none;
+}
