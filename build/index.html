@@ -14,30 +14,26 @@
 <body>
 
 	<div id ="main">
-		<form id="form">
-
-			<header>
-
-				<h1> Sign up for Whoo!</h1>
-				<span id="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</span>
-			
-			</header>
-
-			<div id="body">
+		<header>
+			<h1>Sign up for Whoo!</h1>
+			<p id="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+		</header>
+		<form id="form" method="get">
+			<div id="form-box">
 				<ol>
 
 			<!-- Step 1-->
 					<li>
 						<fieldset>
-							<legend class="steps"> First, name your portfolio </legend>
+							<legend class="steps">First, name your portfolio </legend>
 								<ul>
 									<li>
-										<label for="portfolio-name">Portfolio name</label><br>
+										<label for="portfolio-name">Portfolio name</label>
 										<input type="text" id="portfolio-name" required/>
 									</li>
 									<li>
-										<label for="web-address">Portfolio address</label><br>
-										<input type="url" id="web-address" required/><span>.sample.com</span>
+										<label for="web-address">Portfolio address</label>
+										<input type="url" id="web-address" placeholder=".sample.com"required/>
 									</li>
 								</ul>
 						</fieldset>
@@ -46,19 +42,19 @@
 			<!-- Step 2-->
 					<li>
 						<fieldset>
-							<legend class="steps"> Now, enter your account details</legend>
+							<legend class="steps">Now, enter your account details</legend>
 								<ul>
 									<li>
-										<label for="name">Name</label><br>
+										<label for="name">Name</label>
 										<input type="text" id="name" required/>
 									</li>
 									<li>
-										<label for="email">Email</label><br>
+										<label for="email">Email</label>
 										<input type="email" id="email" required/>
 										<p>NOTE: We'll never share your email, promise.</p>
 									</li>
 									<li>
-										<label for="password">Password</label><br>
+										<label for="password">Password</label>
 										<input type="password" id="password" required/>
 									</li>
 								</ul>
@@ -71,7 +67,7 @@
 							<legend class="steps">Finally, enter your payment information</legend>
 								<ul>
 									<li>
-										<label for="card-number">Card Number</label><br>
+										<label for="card-number">Card Number</label>
 										<input type="text" id="card-number" required/>
 											<ul id="radios">
 												<li>
@@ -93,11 +89,11 @@
 											</ul>
 									</li>
 									<li>
-										<label for="security-code">Security Code</label><br>
+										<label for="security-code">Security Code</label>
 										<input type="text" id="security-code" required />
 									</li>
 									<li> 
-										<label for="expiration-date">Expiration Date</label><br>
+										<label for="expiration-date">Expiration Date</label>
 											<select id="month" name="month" required>
 												<option value="" selected disabled>Month</option>
 												<option>January</option>
