@@ -7,9 +7,9 @@
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 
-  <link rel="stylesheet" href="assets/css/styles.css">
-   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
-  
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
+ 
 
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
@@ -42,14 +42,14 @@
 												<li>
 													<label for="portfolio-name">
 													<span>Portfolio name</span>
-													<input type="text" id="portfolio-name" required/>
+													<input class="text-input" type="text" id="portfolio-name" required/>
 													</label>
 												</li>
 												<li>
 													<label for="web-address">
 
 													<span>Portfolio address</span>
-														<input type="url" id="web-address" required/> 
+														<input class="text-input" type="url" id="web-address" required/> 
 													</label>
 													<label class="sample" for="web-address">.sample.com</label>
 												</li>
@@ -71,13 +71,13 @@
 											<li>
 												<label for="name">
 												<span>Name</span>
-												<input type="text" id="name" required/>
+												<input class="text-input" type="text" id="name" required/>
 												</label>
 											</li>
 											<li>
 												<label for="email">
 												<span>Email</span>
-												<input type="email" id="email" required/>
+												<input class="text-input" type="email" id="email" required/>
 													<p>
 													NOTE: We'll never share your email, promise.
 													</p>
@@ -86,7 +86,7 @@
 											<li>
 												<label for="password">
 												<span>Password</span>
-												<input type="password" id="password" required/>
+												<input class="text-input" type="password" id="password" required/>
 												</label>
 											</li>
 										</ul>
@@ -107,23 +107,23 @@
 													<li>
 														<label for="card-number">
 															<span>Card Number</span>					
-															<input type="text" class="card-number" required/>
+															<input  type="text" class="card-number" required/>
 																<fieldset>
 																	<legend class="credit-cards">Credit Cards</legend>
 																	<ul class="creditcard-radios"> <!-- cc radio list -->
-																			<li class="sprite_amex">
+																			<li class="sprite_amex radio">
 																				<input id="Amex" type="radio" name="CC" value="Amex">
 																				<label for="Amex">Amex</label>
 																			</li>
-																			<li class="sprite_visa">
+																			<li class="sprite_visa radio">
 																				<input id="Visa" type="radio" name="CC" value="Visa" checked>
 																				<label for="Visa">Visa</label>
 																			</li>
-																			<li class="sprite_discover">
+																			<li class="sprite_discover radio">
 																				<input id="Discover" type="radio" name="CC" value="Discover">
 																				<label for="Discover">Discover</label>
 																			</li>	
-																			<li class="sprite-mastercard">
+																			<li class="sprite-mastercard radio">
 																				<input id="Mastercard" type="radio" name="CC" value="Mastercard">
 																				<label for="Mastercard">Mastercard</label>
 																			</li>

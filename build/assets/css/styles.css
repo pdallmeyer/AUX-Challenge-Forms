@@ -46,7 +46,7 @@ h1 {
 	display: block;
 	position: relative;
 	margin-left: auto;
-	margin-right: auto;=
+	margin-right: auto;
 	width: 600px;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -86,9 +86,6 @@ h1 {
 	color: #888888;
 }
 
-input[placeholder] {
-	text-align: right;
-}
 
 /* controls whole ol*/
 ol.circles-list {
@@ -153,7 +150,7 @@ fieldset {
 
 	}
 
-input {
+.text-input {
 	 width: 95%;
 	 border-radius: 5px;
 	 height: 30px;
@@ -162,6 +159,7 @@ input {
 	 border-top: 0px;
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 	}
+
 
 select {
 	display: inline-block;
@@ -173,16 +171,25 @@ select {
 
 .card-number {
 	width: 220px;
+	 border-radius: 5px;
+	 height: 30px;
+	 display: block;
+	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 }
 
 .security-code {
 	width: 80px;
+	 border-radius: 5px;
+	 height: 30px;
+	 display: block;
+	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 }
 
-legend.creditcards {
-	text-indent: -9999px;
-	overflow: hidden;
-		}
+
 
 button {
 	display: block;
@@ -202,16 +209,23 @@ button {
 }
 
 
+.credit-cards {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.radio {
+	display: inline;
+}
+
+
 /* SPRITE */
 
-
-
-.sprite_amex {
-	
+/* .sprite_amex {
 	background: url('/assets/images/sprite.png') no-repeat 0 0; 
 	width: 45px; 
 	height: 30px;
-	}
+	} */
 
 
 
