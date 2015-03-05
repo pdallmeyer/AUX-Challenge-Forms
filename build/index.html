@@ -7,7 +7,7 @@
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
   
 
@@ -22,7 +22,7 @@
 		<div class="header-container">
 			<header>
 				<h1>Sign up for Whoo!</h1>
-				<p id="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+				<p class="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
 			</header>
 		</div>
 		<form id="form" method="get">
@@ -89,7 +89,7 @@
 											</li>
 										</ul>
 									</div>
-							</fieldset>
+				</fieldset>
 					</section>
 				</li> <!-- li step 2 -->
 			<!-- Step 3-->
@@ -105,25 +105,25 @@
 													<li>
 														<label for="card-number">
 															<span>Card Number</span>					
-															<input type="text" id="card-number" required/>
+															<input type="text" class="card-number" required/>
 																<fieldset>
-																	<legend class="creditcards">Credit Cards</legend>
-																	<ul class="radio"> <!-- cc radio list -->
-																			<li class="radio">
+																	<legend class="credit-cards">Credit Cards</legend>
+																	<ul class="creditcard-radios"> <!-- cc radio list -->
+																			<li>
 																				<input id="Amex" type="radio" name="CC" value="Amex">
-																				<label for="Amex">Amex</label>
+																				<label class="sprite_amex" for="Amex">Amex</label>
 																			</li>
-																			<li class="radio">
+																			<li>
 																				<input id="Visa" type="radio" name="CC" value="Visa" checked>
-																				<label for="Visa">Visa</label>
+																				<label class="sprite_visa" for="Visa">Visa</label>
 																			</li>
-																			<li class="radio">
+																			<li>
 																				<input id="Discover" type="radio" name="CC" value="Discover">
-																				<label for="Discover">Discover</label>
+																				<label class="sprite_discover"for="Discover">Discover</label>
 																			</li>	
-																			<li class="radio">
+																			<li>
 																				<input id="Mastercard" type="radio" name="CC" value="Mastercard">
-																				<label for="Mastercard">Mastercard</label>
+																				<label class="sprite-mastercardfor="Mastercard">Mastercard</label>
 																			</li>
 																	</ul><!-- cc radio list -->
 																</fieldset>
@@ -133,12 +133,12 @@
 													<li>
 														<label for="security-code">
 														<span>Security Code</span>
-														<input type="text" id="security-code" required />
+														<input type="text" id="security-code" class="security-code" required />
 														</label>
 													</li>
 													<li>
 														<label for="expiration-date">
-															<span>Expiration Date</span>
+															<span class="expiration-date">Expiration Date</span>
 																<select id="month" name="month" required>
 																	<option value="" selected disabled>Month</option>
 																	<option>January</option>

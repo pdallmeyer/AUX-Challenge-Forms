@@ -24,30 +24,30 @@ h1 {
 	font-size: 24pt;
 	}
 
-#tagline {
+.tagline {
+	font-weight: 700;
 	line-height: 0em;
 	font-size: .76em;
+	font-family:"Open Sans";
+	color: #b3e3ff;
 
 }
 
 
 .steps {
 	font-family: "Merriweather";
+	font-weight: 700;
 	color: #0a5e78;
 
 }
 
-#tagline {
-	font-family:"Open Sans";
-	color: #b3e3ff;
-	}
 
 .main-container {
 	display: block;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	/*height: 1200px;*/
+	height: 1190px;
 	width: 600px;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -82,11 +82,13 @@ h1 {
 
 	}
 
-
 .step-containers p {
 	color: #888888;
 }
 
+input[placeholder] {
+	text-align: right;
+}
 
 /* controls whole ol*/
 ol.circles-list {
@@ -130,20 +132,18 @@ ol.circles-list > li:before {
 	counter-increment: li-counter;
 }
 
-
+li p {
+	line-height: 0px;
+}
 
 ul {
 	list-style-type: none;
-	
-}
+	}
 
-li .radio {
-	display: inline-block;
-}
+
 
 fieldset {
 	border: none;
-
 	}
 
 input {
@@ -151,27 +151,28 @@ input {
 	 border-radius: 5px;
 	 height: 30px;
 	 display: block;
-	 border-top: 0px;
 	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 	}
 
 select {
 	display: inline-block;
 }
 
+.expiration-date {
+	display: block;
+}
 
-#card-number {
+.card-number {
 	width: 220px;
 }
 
-#security-code {
+.security-code {
 	width: 80px;
 }
 
-legend.creditcards {
-	text-indent: -9999px;
-	overflow: hidden;
-		}
+
 
 button {
 	display: block;
@@ -189,3 +190,31 @@ button {
 	font-family: "Merriweather";
 	font-size: 16px;
 }
+
+
+
+/* SPRITE */
+
+
+.sprite_amex {
+	background: url('../images/sprite.png') no-repeat 0 0; 
+	width: 45px; 
+	height: 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
