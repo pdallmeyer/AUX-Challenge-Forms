@@ -1,14 +1,35 @@
+/** {
+	outline: 1px solid red;
+
+} */
+
+
+
 body {
 	background-color: #b3e3ff;
 	font-family: "Open Sans";
 	font-size: 1em;
 	}
 
+header {
+	padding-left: 25px;
+	}
 
 h1 {
+	padding-top:15px;
 	font-family: "Merriweather";
 	color: #FFFFFF;
+	letter-spacing: .05em;
+	line-height: .3em;
+	font-size: 24pt;
 	}
+
+#tagline {
+	line-height: 0em;
+	font-size: .76em;
+
+}
+
 
 .steps {
 	font-family: "Merriweather";
@@ -22,9 +43,11 @@ h1 {
 	}
 
 .main-container {
-	position: absolute;
-	left: 15%;
-	right: 40%;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	/*height: 1200px;*/
 	width: 600px;
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -42,17 +65,27 @@ h1 {
 .form-container {
 	top: 0px;
 	padding-top:0px;
-	
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	}
 
 .step-containers { 
 	background-color:#f3f5f5;
-	padding: 15px;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 40px;
+	padding-bottom: 40px;
 	margin-right: 40px;
 	border-radius: 5px;
+	font-size: .75em; 
+	line-height: 2.5em;
+
 	}
+
+
+.step-containers p {
+	color: #888888;
+}
 
 
 /* controls whole ol*/
@@ -68,28 +101,29 @@ ol.circles-list {
 }
 
 /* controls li in relation to #*/
-ol.circles-list > li{
+ol.circles-list > li {
+	margin-top: 5px;
 	position: relative;
 	margin-bottom: 20px;
 	padding-left: -.2em;
 	min-height: 3em;
 }
 
-/* controls */
+/* controls circles */
 ol.circles-list > li:before {
 	position: absolute;
-	top: 0;
-	left: -2.2em;
-	width: 1.2em;
-	height: 1.2em;
+	top: -.3em;
+	left: -2.6em;
+	width: 1.5em;
+	height: 1.5em;
 	
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: "Merriweather";
-	line-height: 1.2;
+	line-height: -3;
 	text-align: center;
 	color: #f5f5f5;
 
-	border: 3px solid #ffffff;
+	border: 5px solid #ffffff;
     border-radius: 50%;
 	background-color: #52a3d4;
 	content: counter(li-counter);
@@ -100,25 +134,51 @@ ol.circles-list > li:before {
 
 ul {
 	list-style-type: none;
-	display: inline;
+	
+}
+
+li .radio {
+	display: inline-block;
 }
 
 fieldset {
 	border: none;
+
 	}
 
+input {
+	 width: 95%;
+	 border-radius: 5px;
+	 height: 30px;
+	 display: block;
+	 border-top: 0px;
+	 border-left: 0px;
+	}
+
+select {
+	display: inline-block;
+}
+
+
+#card-number {
+	width: 220px;
+}
+
+#security-code {
+	width: 80px;
+}
 
 legend.creditcards {
-	display: none;
-		}
-
-li.radios {
-		display:inline;
+	text-indent: -9999px;
+	overflow: hidden;
 		}
 
 button {
-	margin-left: 50%;
-	margin-bottom: 30px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
 	color: #ffffff;
 	background-color: #85a12f;
 	padding-left: 30px;
