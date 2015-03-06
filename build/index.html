@@ -8,16 +8,15 @@
 
 
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
- 
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic"> 
 
-  <meta charset="UTF-8">
-  <meta http-equiv="cleartype" content="on">
+
+ <meta charset="UTF-8">
+<meta http-equiv="cleartype" content="on">
 
 </head>
 
 <body>
-
 	<div class="main-container">
 		<div class="header-container">
 			<header>
@@ -25,162 +24,127 @@
 				<p class="tagline">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
 			</header>
 		</div>
-		<form id="form" method="get">
-			<div class="form-container">
-				
 
+		<form id="form" method="get">
 			<!-- Step 1-->
 			<ol class="circles-list">
-				<li> <!-- li step 1 -->
-					<section>
-							<fieldset>
-								<legend class="steps">
-								First, name your portfolio 
-								</legend>
-									<div class="step-containers">
-											<ul>
-												<li>
-													<label for="portfolio-name">
-													<span>Portfolio name</span>
-													<input class="text-input" type="text" id="portfolio-name" required/>
-													</label>
-												</li>
-												<li>
-													<label for="web-address">
-
-													<span>Portfolio address</span>
-														<input class="text-input" type="url" id="web-address" required/> 
-													</label>
-													<label class="sample" for="web-address">.sample.com</label>
-												</li>
-											</ul>
-									</div>
-							</fieldset>
-					</section>
-				</li> <!-- li step 1 -->
+				 <li> <!-- li step 1 -->
+					<fieldset>
+					<legend class="steps">First, name your portfolio</legend>
+						<div class="step-containers">
+							<ul>
+								<li>
+									<label for="portfolio-name">Portfolio name</label>
+									<input class="text-input" type="text" id="portfolio-name" required/>
+								</li>
+								<li>
+									<label for="web-address">Portfolio address</label>
+									<input class="text-input" type="url" id="web-address" required/> 
+									<label class="secondary-label" for="web-address">.sample.com</label>
+								</li>
+							</ul>
+						</div>
+					</fieldset>
+				</li> 
+			<!-- end step 1 -->
 
 			<!-- Step 2-->
-				<li><!-- li step 2 -->
-					<section>
-							<fieldset>
-								<legend class =steps>
-								Now, enter your account details
-								</legend>
-									<div class="step-containers">
-										<ul>
-											<li>
-												<label for="name">
-												<span>Name</span>
-												<input class="text-input" type="text" id="name" required/>
-												</label>
-											</li>
-											<li>
-												<label for="email">
-												<span>Email</span>
-												<input class="text-input" type="email" id="email" required/>
-													<p>
-													NOTE: We'll never share your email, promise.
-													</p>
-												</label>
-											</li>
-											<li>
-												<label for="password">
-												<span>Password</span>
-												<input class="text-input" type="password" id="password" required/>
-												</label>
-											</li>
-										</ul>
-									</div>
-				</fieldset>
-					</section>
-				</li> <!-- li step 2 -->
+				<li>
+					<fieldset>
+					<legend class =steps>Now, enter your account details</legend>
+						<div class="step-containers">
+							<ul>
+								<li>
+									<label for="name">Name</label>
+									<input class="text-input" type="text" id="name" required/>
+								</li>
+								<li>
+									<label for="email">Email</label>
+									<input class="text-input" type="email" id="email" required/>
+									<p>NOTE: We'll never share your email, promise.</p>
+								</li>
+								<li>
+									<label for="password">Password</label>
+									<input class="text-input" type="password" id="password" required/>
+								</li>
+							</ul>
+						</div>
+					</fieldset>
+				</li> 
+			<!-- end step 2 -->
+
 			<!-- Step 3-->
 				<li>
-					<section>
-						
-							<fieldset>
-								<legend class=steps>
-								Finally, enter your payment information
-								</legend>
-									<div class="step-containers">
-												<ul> <!-- step three ul -->
-													<li>
-														<label for="card-number">
-															<span>Card Number</span>					
-															<input  type="text" class="card-number" required/>
-																<fieldset>
-																	<legend class="credit-cards">Credit Cards</legend>
-																	<ul> <!-- cc radio list -->
-																			<li class="sprite_amex radio">
-																				<input id="Amex" type="radio" name="CC" value="Amex">
-																				<label for="Amex">Amex</label>
-																			</li>
-																			<li class="sprite_visa radio">
-																				<input id="Visa" type="radio" name="CC" value="Visa" checked>
-																				<label for="Visa">Visa</label>
-																			</li>
-																			<li class="sprite_discover radio">
-																				<input id="Discover" type="radio" name="CC" value="Discover">
-																				<label for="Discover">Discover</label>
-																			</li>	
-																			<li class="sprite-mastercard radio">
-																				<input id="Mastercard" type="radio" name="CC" value="Mastercard">
-																				<label for="Mastercard">Mastercard</label>
-																			</li>
-																	</ul><!-- cc radio list -->
-																</fieldset>
-															</label>
-													</li>
-
-													<li>
-														<label for="security-code">
-														<span>Security Code</span>
-														<input type="text" id="security-code" class="security-code" required />
-														</label>
-													</li>
-													<li>
-														<label for="expiration-date">
-															<span class="expiration-date">Expiration Date</span>
-																<select id="month" name="month" required>
-																	<option value="" selected disabled>Month</option>
-																	<option>January</option>
-																	<option>February</option>
-																	<option>March</option>
-																	<option>April</option>
-																	<option>May</option>
-																	<option>June</option>
-																	<option>July</option>
-																	<option>August</option>
-																	<option>September</option>
-																	<option>October</option>
-																	<option>November</option>
-																	<option>December</option>
-																</select>
-
-																<select id="year" name="year" required>
-																	<option value="" selected="selected" disabled>Year</option>
-																	<option>2015</option>
-																	<option>2016</option>
-																	<option>2017</option>
-																	<option>2018</option>
-																	<option>2019</option>
-																</select>
-														</label>
-													</li>
-										</ul><!--end ul payment information-->
-									
-							</fieldset>
-							</div>
-				</section>
-				</fieldset>
-				</section>
-
+					<fieldset>
+					<legend class="steps">Finally, enter your payment information</legend>
+						<div class="step-containers">
+							<ul> <!-- ul payment information -->
+								<li>
+									<label for="card-number">Card Number</label>		
+									<input  type="text" class="card-number" required/>
+										<fieldset class="creditcardlist">
+										<legend class="legend-label">Credit Cards</legend>
+											<ul class="credit-cards"> <!-- cc radio list -->
+												<li class="sprite-amex">
+													<input id="cardtype-1" type="radio" name="cardtype" value="Amex">
+													<label for="Amex">Amex</label>
+												</li>
+												<li class="sprite-visa">
+													<input id="cardtype-2" type="radio" name="cardtype" value="Visa" checked>
+													<label for="Visa">Visa</label>
+												</li>
+												<li class="sprite-discover">
+													<input id="cardtype-3" type="radio" name="cardtype" value="Discover">
+													<label for="Discover">Discover</label>
+												</li>	
+												<li class="sprite-mastercard">
+													<input id="cardtype-4" type="radio" name="cardtype" value="Mastercard">
+													<label for="Mastercard">Mastercard</label>
+												</li>
+											</ul><!-- cc radio list -->
+										</fieldset>
+								</li>
+								<li>
+									<label for="security-code">Security Code</label>
+									<input type="text" id="security-code" class="security-code" required />
+								</li>
+								<li>
+									<label for="expiration-date">
+									<span class="input-label">Expiration Date</span>
+									</label>
+									<select name="month" required>
+										<option value="" selected disabled>Month</option>
+										<option value="01">January</option>
+										<option value="02">February</option>
+										<option value="03">March</option>
+										<option value="04">April</option>
+										<option value="05">May</option>
+										<option value="06">June</option>
+										<option value="07">July</option>
+										<option value="08">August</option>
+										<option value="09">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+									<select name="year" required>
+										<option value="" selected="selected" disabled>Year</option>
+										<option>2015</option>
+										<option>2016</option>
+										<option>2017</option>
+										<option>2018</option>
+										<option>2019</option>
+									</select>	
+								</li>
+							</ul><!--end ul payment information-->
+						</div>
+					</fieldset>
+				</li>
+				<!-- end step 3 -->
+			</ol>
+			
 				<!-- Button-->
-
-				<div class="button">
-					<button type="submit">Create your portfolio</button>
-				</div>
-			</div>
+			<button type="submit">Create your portfolio</button>
 		</form>
 	</div>
 

@@ -4,12 +4,59 @@
 } */
 
 
+/* -----------------main layout & containers-------------- */
 
 body {
 	background-color: #b3e3ff;
 	font-family: "Open Sans";
 	font-size: 1em;
 	}
+
+.main-container {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding-bottom: 40px;
+
+	}
+
+.header-container {
+	box-shadow: inset 0px 0px 10px #ffffff;
+	background-color: #12637c;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	}
+
+/*.form-container {
+	top: 0px;
+	padding-top:0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom: 40px;
+	}*/
+
+	.step-containers { 
+	background-color:#f3f5f5;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	margin-right: 40px;
+	border-radius: 5px;
+	font-size: .75em; 
+	line-height: 2.5em;
+
+	}
+
+/* -----------------header-------------- */
 
 header {
 	padding-left: 25px;
@@ -34,6 +81,30 @@ h1 {
 }
 
 
+/* -----------------section formatting-------------- */
+
+fieldset {
+	border: none;
+	}
+
+select {
+	display: inline-block;
+}
+
+.input-label {
+	display: block;
+}
+
+.text-input {
+	 width: 95%;
+	 border-radius: 5px;
+	 height: 30px;
+	 display: block;
+	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
+
+	}
 .steps {
 	font-family: "Merriweather";
 	font-weight: 700;
@@ -41,52 +112,13 @@ h1 {
 
 }
 
-
-.main-container {
-	display: block;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px;
-	background-color: #ffffff;
-	border-radius: 10px;
-	}
-
-.header-container {
-	box-shadow: inset 0px 0px 10px #ffffff;
-	background-color: #12637c;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	padding-left: 25px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	}
-
-.form-container {
-	top: 0px;
-	padding-top:0px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	}
-
-.step-containers { 
-	background-color:#f3f5f5;
-	padding-top: 20px;
-	padding-left: 0px;
-	padding-right: 40px;
-	padding-bottom: 40px;
-	margin-right: 40px;
-	border-radius: 5px;
-	font-size: .75em; 
-	line-height: 2.5em;
-
-	}
-
-
-.step-containers p {
-	color: #888888;
+ul {
+	list-style-type: none;
+	
 }
 
+
+/* ---------------------ol number styling ------------------------- */
 
 /* controls whole ol*/
 ol.circles-list {
@@ -130,51 +162,76 @@ ol.circles-list > li:before {
 	counter-increment: li-counter;
 }
 
+/* -----------------1 name portfolio-------------- */
+
+.secondary-label { 
+	position: absolute;
+	text-align: center;
+	width: 150px;
+	top: 142px;
+	left: 305px;
+	background-image: linear-gradient(red, orange);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	color: #888888;
+
+}
+
+/* -----------------2 account details-------------- */
+
+.step-containers p {
+	color: #888888;
+}
+
+
+
+
 li p {
 	line-height: 0px;
 }
 
-ul {
-	list-style-type: none;
+
+
+
+/* -----------------3 payment info-------------- */
+
+
+
+.credit-cards li {
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 45px;
+	height: 30px;
+	display: inline-block;
+}
+
+.credit-cards {
+	width: 200px;
+	display: inline-block;
 	
 }
 
-/*.radio {
-	display: inline-block;
+.legend-label {
 	text-indent: -9999px;
 	overflow: hidden;
-}*/
-
-
-fieldset {
-	border: none;
-
-	}
-
-.text-input {
-	 width: 95%;
-	 border-radius: 5px;
-	 height: 30px;
-	 display: block;
-	 border-left: 0px;
-	 border-top: 0px;
-	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
-	}
-
-
-select {
-	display: inline-block;
 }
 
-.expiration-date {
+label {
 	display: block;
 }
 
+/*.credit-cards input[type="radio"] {
+	visibility: hidden;
+} */
+
+ul .creditcards label {
+
+}
 .card-number {
 	width: 220px;
 	 border-radius: 5px;
 	 height: 30px;
-	 display: block;
+	 display: inline-block;
 	 border-left: 0px;
 	 border-top: 0px;
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
@@ -191,6 +248,31 @@ select {
 }
 
 
+/* -----------------credit card sprites checked-------------- */
+
+
+.sprite-amex { 
+	background: url('../images/sprite.png') no-repeat 0px 0; 
+	}
+
+
+.sprite-visa { 
+	background: url('../images/sprite.png') no-repeat -48px 0; 
+}
+	
+
+.sprite-discover { 
+	background: url('../images/sprite.png') no-repeat -96px 0; 
+}
+
+
+.sprite-mastercard { 
+	background: url('../images/sprite.png') no-repeat -144px 0; 
+}
+
+
+
+/* -----------------button-------------- */
 
 button {
 	display: block;
@@ -206,38 +288,12 @@ button {
 	border-radius: 10px;
 	font-family: "Merriweather";
 	font-size: 16px;
-}
-
-
-.credit-cards {
-	text-indent: -9999px;
-	overflow: hidden;
-}
-
-.radio {
-	display: inline;
-}
-
-
-/* SPRITE */
-
-.sprite-amex { 
-	background: url('../images/sprite.png') no-repeat 0 0; 
-	width: 45px; 
-	height: 30px; 
+	border: none;
 	}
 
 
 
-
-
-
-
-
-
-
-
-
+input#cardtype-1:checked + label
 
 
 
