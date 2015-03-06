@@ -1,6 +1,5 @@
-/** {
+/* * {
 	outline: 1px solid red;
-
 } */
 
 
@@ -35,26 +34,17 @@ body {
 
 	}
 
-/*.form-container {
-	top: 0px;
-	padding-top:0px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	padding-bottom: 40px;
-	}*/
-
-	.step-containers { 
-	background-color:#f3f5f5;
-	padding-top: 20px;
-	padding-left: 0px;
-	padding-right: 40px;
-	padding-bottom: 40px;
-	margin-right: 40px;
-	border-radius: 5px;
-	font-size: .75em; 
-	line-height: 2.5em;
-
-	}
+.step-containers { 
+background-color:#f3f5f5;
+padding-top: 20px;
+padding-left: 0px;
+padding-right: 40px;
+padding-bottom: 40px;
+margin-right: 40px;
+border-radius: 5px;
+font-size: .75em; 
+line-height: 2.5em;
+}
 
 /* -----------------header-------------- */
 
@@ -105,6 +95,7 @@ select {
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 
 	}
+
 .steps {
 	font-family: "Merriweather";
 	font-weight: 700;
@@ -114,8 +105,7 @@ select {
 
 ul {
 	list-style-type: none;
-	
-}
+	}
 
 
 /* ---------------------ol number styling ------------------------- */
