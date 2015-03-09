@@ -104,10 +104,15 @@ label {
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 	}
 
+input:valid + label::after {
+	content: url('../images/sprite.png') no-repeat -30px -167px; 
 
-.text-input input:valid {
-    background-image: url('../images/sprite.png') no-repeat -30px -167px; width: 19px; height: 19px;
-} 
+		}
+
+input:invalid + label::after{
+	content: url('../images/sprite.png') no-repeat -1px -167px; 
+
+}
 
 
 
@@ -164,10 +169,11 @@ ol.circles-list > li:before {
 	height: 32px;
 	top: 141px;
 	left: 325px;
-	background-image: linear-gradient(90deg, #ebebeb, #fafafa);
+	/* background-image: linear-gradient(90deg, #ebebeb, #fafafa); */
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	color: #888888;
+	background-color: #fafafa;
 
 }
 
