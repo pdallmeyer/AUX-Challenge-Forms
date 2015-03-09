@@ -2,7 +2,6 @@
 	outline: 1px solid red;
 } */
 
-
 /* -----------------main layout & containers-------------- */
 
 body {
@@ -35,16 +34,16 @@ body {
 	}
 
 .step-containers { 
-background-color:#f3f5f5;
-padding-top: 20px;
-padding-left: 0px;
-padding-right: 40px;
-padding-bottom: 40px;
-margin-right: 40px;
-border-radius: 5px;
-font-size: .75em; 
-line-height: 2.5em;
-}
+	background-color:#f3f5f5;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 40px;
+	margin-right: 40px;
+	border-radius: 5px;
+	font-size: .75em; 
+	line-height: 2.5em;
+	}
 
 /* -----------------header-------------- */
 
@@ -67,8 +66,7 @@ h1 {
 	font-size: .76em;
 	font-family:"Open Sans";
 	color: #b3e3ff;
-
-}
+	}
 
 
 /* -----------------section formatting-------------- */
@@ -77,35 +75,40 @@ fieldset {
 	border: none;
 	}
 
-select {
-	display: inline-block;
-}
 
-.input-label {
-	display: block;
-}
 
-.text-input {
-	 width: 95%;
-	 border-radius: 5px;
-	 height: 30px;
-	 display: block;
-	 border-left: 0px;
-	 border-top: 0px;
-	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
-
-	}
 
 .steps {
 	font-family: "Merriweather";
 	font-weight: 700;
 	color: #0a5e78;
 
-}
+	}
 
 ul {
 	list-style-type: none;
 	}
+
+label {
+	display: block;
+}
+
+/* -----------------input error-------------- */
+
+.text-input {
+	 width: 420px;
+	 border-radius: 5px;
+	 height: 30px;
+	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
+	}
+
+
+.text-input input:valid {
+    background-image: url('../images/sprite.png') no-repeat -30px -167px; width: 19px; height: 19px;
+} 
+
 
 
 /* ---------------------ol number styling ------------------------- */
@@ -120,7 +123,7 @@ ol.circles-list {
 	
 	counter-reset: li-counter;
 	padding-top: 1.2em;
-}
+	}
 
 /* controls li in relation to #*/
 ol.circles-list > li {
@@ -129,8 +132,8 @@ ol.circles-list > li {
 	margin-bottom: 20px;
 	padding-left: -.2em;
 	min-height: 3em;
-}
-
+	}
+	
 /* controls circles */
 ol.circles-list > li:before {
 	position: absolute;
@@ -150,7 +153,7 @@ ol.circles-list > li:before {
 	background-color: #52a3d4;
 	content: counter(li-counter);
 	counter-increment: li-counter;
-}
+	}
 
 /* -----------------1 name portfolio-------------- */
 
@@ -158,9 +161,10 @@ ol.circles-list > li:before {
 	position: absolute;
 	text-align: center;
 	width: 150px;
-	top: 142px;
-	left: 305px;
-	background-image: linear-gradient(red, orange);
+	height: 32px;
+	top: 141px;
+	left: 325px;
+	background-image: linear-gradient(90deg, #ebebeb, #fafafa);
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	color: #888888;
@@ -171,60 +175,39 @@ ol.circles-list > li:before {
 
 .step-containers p {
 	color: #888888;
-}
-
-
-
+	}
 
 li p {
 	line-height: 0px;
-}
-
-
-
+	}
 
 /* -----------------3 payment info-------------- */
 
-
-
-.credit-cards li {
-	text-indent: -9999px;
-	overflow: hidden;
-	width: 45px;
-	height: 30px;
+.creditcard-fieldset {
 	display: inline-block;
+	margin: 0px;
+	padding: 0px
 }
 
-.credit-cards {
-	width: 200px;
-	display: inline-block;
-	
-}
 
 .legend-label {
+	height: 0px;
 	text-indent: -9999px;
 	overflow: hidden;
-}
+	}
 
-label {
-	display: block;
-}
 
-/*.credit-cards input[type="radio"] {
-	visibility: hidden;
-} */
 
-ul .creditcards label {
 
-}
 .card-number {
-	width: 220px;
+	width: 200px;
 	 border-radius: 5px;
 	 height: 30px;
-	 display: inline-block;
 	 border-left: 0px;
 	 border-top: 0px;
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
+	 margin-right: 10px
+
 }
 
 .security-code {
@@ -238,26 +221,82 @@ ul .creditcards label {
 }
 
 
-/* -----------------credit card sprites checked-------------- */
+.credit-cards li {
+	display: inline-block;
+	width: 45px;
+	height: 30px;
+	}
+
+ul.credit-cards li label {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	width: 45px;
+	height: 30px;
+}
+
+
+.credit-card-label {
+	display: block;
+	}
+
+.credit-card-label span {
+
+	width: 45px;
+	height: 30px;
+}
+
+
+/* THIS SHOULD WORK BUT IT DOESN'T
+
+input[type="radio"] {
+	display: none;
+} 
+*/
+
+
+
+/* -----------------credit card sprites unchecked-------------- */
 
 
 .sprite-amex { 
-	background: url('../images/sprite.png') no-repeat 0px 0; 
+	background: url('../images/sprite.png') no-repeat -1px -40px;
 	}
 
 
 .sprite-visa { 
-	background: url('../images/sprite.png') no-repeat -48px 0; 
+	background: url('../images/sprite.png') no-repeat -48px -40px; 
 }
 	
 
 .sprite-discover { 
-	background: url('../images/sprite.png') no-repeat -96px 0; 
+	background: url('../images/sprite.png') no-repeat  -96px -40px; 
 }
 
 
 .sprite-mastercard { 
-	background: url('../images/sprite.png') no-repeat -144px 0; 
+	background: url('../images/sprite.png') no-repeat -144px -40px;
+}
+
+
+/* -----------------credit card sprites checked-------------- */
+
+
+.sprite-amex input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat 0px 0; 
+}
+
+
+.sprite-visa input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -48px 0; 
+}
+
+.sprite-discover input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -96px 0;
+}
+
+.sprite-mastercard input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -144px 0;
 }
 
 
@@ -282,8 +321,6 @@ button {
 	}
 
 
-
-input#cardtype-1:checked + label
 
 
 
