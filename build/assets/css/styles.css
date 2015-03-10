@@ -189,11 +189,6 @@ li p {
 
 /* -----------------3 payment info-------------- */
 
-.creditcard-fieldset {
-	display: inline-block;
-	margin: 0px;
-	padding: 0px
-}
 
 
 .legend-label {
@@ -201,9 +196,6 @@ li p {
 	text-indent: -9999px;
 	overflow: hidden;
 	}
-
-
-
 
 .card-number {
 	width: 200px;
@@ -226,36 +218,22 @@ li p {
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 }
 
-
 .credit-cards li {
-	display: inline;
-	
-	}
-
-ul.credit-cards li label {
-	text-indent: -9999px;
-	overflow: hidden;
 	display: inline-block;
 	width: 45px;
 	height: 30px;
+
 }
 
 
 
-
-/*.credit-card-label span {
-	display: inline;
-	width: 45px;
-	height: 30px;
-}
-*/
-
+/*
 
  input[type="radio"] {
 	display: none;
 } 
 
-
+*/
 
 
 /* -----------------credit card sprites unchecked-------------- */
@@ -284,13 +262,14 @@ ul.credit-cards li label {
 /* -----------------credit card sprites checked-------------- */
 
 
-.sprite-amex input[type="radio"]:checked + label {
+.sprite-amex {
   background: url('../images/sprite.png') no-repeat 0px 0; 
 }
 
 
-.sprite-visa input[type="radio"]:checked + label {
-  background: url('../images/sprite.png') no-repeat -48px 0; 
+.sprite-visa input[type="radio"]:checked + span {
+  background: url('../images/sprite.png') no-repeat -48px 0;
+ 
 }
 
 .sprite-discover input[type="radio"]:checked + label {
