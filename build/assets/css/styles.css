@@ -228,9 +228,8 @@ li p {
 
 
 .credit-cards li {
-	display: inline-block;
-	width: 45px;
-	height: 30px;
+	display: inline;
+	
 	}
 
 ul.credit-cards li label {
@@ -242,23 +241,20 @@ ul.credit-cards li label {
 }
 
 
-.credit-card-label {
-	display: block;
-	}
 
-.credit-card-label span {
 
+/*.credit-card-label span {
+	display: inline;
 	width: 45px;
 	height: 30px;
 }
+*/
 
 
-/* THIS SHOULD WORK BUT IT DOESN'T
-
-input[type="radio"] {
+ input[type="radio"] {
 	display: none;
 } 
-*/
+
 
 
 
