@@ -1,3 +1,6 @@
+<!-- V2 -->
+
+
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -81,33 +84,33 @@
 							<ul> <!-- ul payment information -->
 								<li>
 									<label for="card-number">Card Number</label>		
-									<input  type="text" class="card-number" required/>
+									<input class="card-number" type="text" pattern="[0-9]{13,16}" required/>
 										<fieldset class="creditcard-fieldset">
 										<legend class="legend-label">Credit Cards</legend>
 											<ul class="credit-cards"> <!-- cc radio list -->
 												<li class="sprite-amex">
-												<label class="credit-card-label" for="amex">
-												<input id="amex" type="radio" name="cardtype" value="Amex">
-												<span>Amex</span>
-												</label>
+													<label id="amex" class="credit-card-label" for="amex">
+														<input type="radio" name="cardtype" id="amex"  value="Amex">
+														<span>Amex</span>
+													</label>
 												</li>
 												<li class="sprite-visa">
-												<label class="credit-card-label" for="visa">
-												<input id="visa" type="radio" name="cardtype" value="Visa" checked>
-												<span>Visa</span>
-												</label>
+													<label class="credit-card-label" for="visa">
+														<input type="radio" name="cardtype" id="visa"  value="Visa" checked>
+														<span>Visa</span>
+													</label>
 												</li>
 												<li class="sprite-discover">
-												<label class="credit-card-label" for="discover">
-												<input id="discover" type="radio" name="cardtype" value="Discover">
-												<span>Discover</span>
-												</label>
+													<label class="credit-card-label" for="discover">
+														<input type="radio" name="cardtype" id="discover"  value="Discover">
+														<span>Discover</span>
+													</label>
 												</li>	
 												<li class="sprite-mastercard">
-												<label class="credit-card-label" for="mastercard">
-												<input id="mastercard" type="radio" name="cardtype" value="Mastercard">
-												<span>Mastercard</span>
-												</label>
+													<label class="credit-card-label" for="mastercard">
+														<input type="radio" name="cardtype" id="mastercard"  value="Mastercard">
+														<span>Mastercard</span>
+													</label>
 												</li>
 											</ul><!-- cc radio list -->
 										</fieldset>

@@ -1,4 +1,9 @@
-/* * {
+/* V2
+
+
+
+
+* {
 	outline: 1px solid red;
 } */
 
@@ -93,7 +98,7 @@ label {
 	display: block;
 }
 
-/* -----------------input error-------------- */
+/* -----------------input & validation -------------- */
 
 .text-input {
 	 width: 420px;
@@ -104,17 +109,15 @@ label {
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
 	}
 
-input:valid + label::after {
+input:valid:focus  {
+	border: 1px solid green;
 	content: url('../images/sprite.png') no-repeat -30px -167px; 
+	width: 19px; height: 19px;
+	}
 
-		}
-
-input:invalid + label::after{
-	content: url('../images/sprite.png') no-repeat -1px -167px; 
-
-}
-
-
+input:invalid:focus {
+	border: 1px solid red;
+	}
 
 /* ---------------------ol number styling ------------------------- */
 
@@ -220,8 +223,6 @@ li p {
 
 .credit-cards li {
 	display: inline-block;
-	width: 45px;
-	height: 30px;
 
 }
 
@@ -239,45 +240,61 @@ li p {
 /* -----------------credit card sprites unchecked-------------- */
 
 
-.sprite-amex { 
+.sprite-amex label { 
 	background: url('../images/sprite.png') no-repeat -1px -40px;
+	width: 45px;
+	height: 30px;
 	}
 
 
-.sprite-visa { 
+.sprite-visa label { 
 	background: url('../images/sprite.png') no-repeat -48px -40px; 
+	width: 45px;
+	height: 30px;
 }
 	
 
-.sprite-discover { 
+.sprite-discover label { 
 	background: url('../images/sprite.png') no-repeat  -96px -40px; 
+	width: 45px;
+	height: 30px;
 }
 
 
-.sprite-mastercard { 
+.sprite-mastercard label { 
 	background: url('../images/sprite.png') no-repeat -144px -40px;
+	width: 45px;
+	height: 30px;
 }
 
 
 /* -----------------credit card sprites checked-------------- */
 
 
-.sprite-amex {
+.sprite-amex input[type="radio"]:checked + label {
   background: url('../images/sprite.png') no-repeat 0px 0; 
+  width: 45px;
+	height: 30px;
 }
 
 
-.sprite-visa input[type="radio"]:checked + span {
+.sprite-visa input[type="radio"]:checked + label {
   background: url('../images/sprite.png') no-repeat -48px 0;
+  width: 45px;
+	height: 30px;
  
 }
 
-.sprite-discover input[type="radio"]:checked + label {
+.sprite-discover input[type="radio"]:checked  + label {
   background: url('../images/sprite.png') no-repeat -96px 0;
+  width: 45px;
+	height: 30px;
 }
 
 .sprite-mastercard input[type="radio"]:checked + label {
   background: url('../images/sprite.png') no-repeat -144px 0;
+  width: 45px;
+	height: 30px;
 }
 
 
