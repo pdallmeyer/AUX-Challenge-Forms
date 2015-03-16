@@ -1,9 +1,6 @@
-/* V2
+/* MASTER 
 
-
-
-
-* {
+ * {
 	outline: 1px solid red;
 } */
 
@@ -28,7 +25,6 @@ body {
 	}
 
 .header-container {
-	box-shadow: inset 0px 0px 10px #ffffff;
 	background-color: #12637c;
 	padding-top: 10px;
 	padding-bottom: 15px;
@@ -80,7 +76,14 @@ fieldset {
 	border: none;
 	}
 
-
+.text-input {
+	 width: 420px;
+	 border-radius: 5px;
+	 height: 30px;
+	 border-left: 0px;
+	 border-top: 0px;
+	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
+	}
 
 
 .steps {
@@ -98,26 +101,51 @@ label {
 	display: block;
 }
 
-/* -----------------input & validation -------------- */
+/* -----------------validation-------------- */
 
-.text-input {
-	 width: 420px;
-	 border-radius: 5px;
-	 height: 30px;
-	 border-left: 0px;
-	 border-top: 0px;
-	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
-	}
 
-input:valid:focus  {
-	border: 1px solid green;
+/* input:valid + label::after {
 	content: url('../images/sprite.png') no-repeat -30px -167px; 
+
+		}
+
+input:invalid + label::after{
+	content: url('../images/sprite.png') no-repeat -1px -167px; 
+	} */
+
+
+input:focus:invalid + .name-validation {
+	background: url('../images/sprite.png') no-repeat -1px -167px; 
 	width: 19px; height: 19px;
+	position: absolute;
+	top: 84px;
+	left: 445px;
 	}
 
-input:invalid:focus {
-	border: 1px solid red;
+input:valid + .name-validation {
+	background: url('../images/sprite.png') no-repeat -30px -167px; 
+	width: 19px; height: 19px;
+	position: absolute;
+	top: 84px;
+	left: 445px;
 	}
+
+input:focus:invalid + .email-validation {
+	background: url('../images/sprite.png') no-repeat -1px -167px; 
+	width: 19px; height: 19px;
+	position: absolute;
+	top: 147px;
+	left: 445px;
+	}
+
+input:valid + .email-validation {
+	background: url('../images/sprite.png') no-repeat -30px -167px; 
+	width: 19px; height: 19px;
+	position: absolute;
+	top: 147px;
+	left: 445px;
+	}
+
 
 /* ---------------------ol number styling ------------------------- */
 
@@ -177,21 +205,27 @@ ol.circles-list > li:before {
 	border-bottom-right-radius: 3px;
 	color: #888888;
 	background-color: #fafafa;
+	border-left: 1px solid #cbcbcb;
 
 }
 
 /* -----------------2 account details-------------- */
 
-.step-containers p {
+.note {
 	color: #888888;
+	line-height: 2.8em;
 	}
 
-li p {
-	line-height: 0px;
-	}
+
 
 /* -----------------3 payment info-------------- */
 
+.creditcard-fieldset {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
 
 
 .legend-label {
@@ -200,6 +234,9 @@ li p {
 	overflow: hidden;
 	}
 
+
+
+
 .card-number {
 	width: 200px;
 	 border-radius: 5px;
@@ -207,7 +244,8 @@ li p {
 	 border-left: 0px;
 	 border-top: 0px;
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
-	 margin-right: 10px
+	 margin-right: 10px;
+
 
 }
 
@@ -215,20 +253,126 @@ li p {
 	width: 80px;
 	 border-radius: 5px;
 	 height: 30px;
-	 display: block;
+	 display: inline-block;
 	 border-left: 0px;
 	 border-top: 0px;
 	 box-shadow: inset 0px 1.5px 0px 0px #cbcbcb;
+	 margin-right: 10px;
+
 }
+
 
 .credit-cards li {
-	display: inline-block;
+	display: inline;
+	
+	}
 
+.credit-cards {
+	padding-left: 0px;
+	line-height: 0px;
+
+}
+
+ul.credit-cards li label {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	width: 45px;
+	height: 30px;
+	cursor: pointer;
+}
+
+
+ input[type="radio"] {
+	position: absolute;
+	left: -999px;
+
+} 
+
+
+.secondary-pic {
+	background: url('../images/sprite.png') no-repeat 0 -124px; 
+	width: 62px; height: 32px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+}
+
+
+/* -----------------credit card sprites -------------- */
+
+
+.sprite-amex label { 
+	background: url('../images/sprite.png') no-repeat -1px -40px;
+	}
+
+
+.sprite-visa label { 
+	background: url('../images/sprite.png') no-repeat -48px -40px; 
+}
+	
+
+.sprite-discover label { 
+	background: url('../images/sprite.png') no-repeat  -96px -40px; 
+}
+
+
+.sprite-mastercard label { 
+	background: url('../images/sprite.png') no-repeat -144px -40px;
 }
 
 
 
-/*
+/* -----------------credit card sprites checked-------------- */
+
+
+.sprite-amex input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat 0px 0; 
+}
+
+
+.sprite-visa input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -48px 0; 
+}
+
+.sprite-discover input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -96px 0;
+}
+
+.sprite-mastercard input[type="radio"]:checked + label {
+  background: url('../images/sprite.png') no-repeat -144px 0;
+}
+
+
+
+/* -----------------button-------------- */
+
+button {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	background-color: #85a12f;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+	font-family: "Merriweather";
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	}
+
+
+
+
+
+
+
+
 
  input[type="radio"] {
 	display: none;

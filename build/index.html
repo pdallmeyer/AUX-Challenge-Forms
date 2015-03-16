@@ -1,16 +1,13 @@
-<!-- V2 -->
-
-
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <title>Forms Challenge V2</title>
+  <title>Forms Challenge MASTER</title>
   
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic"
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 
 
@@ -39,6 +36,7 @@
 								<li>
 									<label for="portfolio-name">Portfolio name</label>
 									<input class="text-input" type="text" id="portfolio-name" required/>
+									<label for "portfolio-name" class="name-validation"></label>
 								</li>
 								<li>
 									<label for="web-address">Portfolio address</label>
@@ -64,7 +62,8 @@
 								<li>
 									<label for="email">Email</label>
 									<input class="text-input" type="email" id="email" required/>
-									<p>NOTE: We'll never share your email, promise.</p>
+									<label for "email" class="email-validation"></label>
+									<label class="note" for "email">NOTE: We'll never share your email, promise.</label>
 								</li>
 								<li>
 									<label for="password">Password</label>
@@ -84,40 +83,37 @@
 							<ul> <!-- ul payment information -->
 								<li>
 									<label for="card-number">Card Number</label>		
-									<input class="card-number" type="text" pattern="[0-9]{13,16}" required/>
+									<input  type="text" class="card-number" required/>
 										<fieldset class="creditcard-fieldset">
 										<legend class="legend-label">Credit Cards</legend>
 											<ul class="credit-cards"> <!-- cc radio list -->
 												<li class="sprite-amex">
-													<label id="amex" class="credit-card-label" for="amex">
-														<input type="radio" name="cardtype" id="amex"  value="Amex">
-														<span>Amex</span>
-													</label>
+												<input id="amex" type="radio" name="cardtype" value="Amex">
+													<label class="credit-card-label" for="amex">Amex</label>
 												</li>
 												<li class="sprite-visa">
-													<label class="credit-card-label" for="visa">
-														<input type="radio" name="cardtype" id="visa"  value="Visa" checked>
-														<span>Visa</span>
-													</label>
+												<input id="visa" type="radio" name="cardtype" value="Visa">
+													<label class="credit-card-label" for="visa">Visa</label>
 												</li>
 												<li class="sprite-discover">
+													<input id="discover" type="radio" name="cardtype" value="Discover">
 													<label class="credit-card-label" for="discover">
-														<input type="radio" name="cardtype" id="discover"  value="Discover">
-														<span>Discover</span>
+													Discover
 													</label>
 												</li>	
 												<li class="sprite-mastercard">
+												<input id="mastercard" type="radio" name="cardtype" value="Mastercard">
 													<label class="credit-card-label" for="mastercard">
-														<input type="radio" name="cardtype" id="mastercard"  value="Mastercard">
-														<span>Mastercard</span>
+													Mastercard
 													</label>
 												</li>
 											</ul><!-- cc radio list -->
 										</fieldset>
 								</li>
 								<li>
-									<label for="security-code">Security Code</label>
+									<label for="security-code" >Security Code</label>
 									<input type="text" id="security-code" class="security-code" required />
+									<p class="secondary-pic"></p>
 								</li>
 								<li>
 									<label for="expiration-date">
@@ -138,6 +134,7 @@
 										<option value="11">November</option>
 										<option value="12">December</option>
 									</select>
+
 									<select name="year" required>
 										<option value="" selected="selected" disabled>Year</option>
 										<option>2015</option>
@@ -159,6 +156,9 @@
 		</form>
 	</div>
 
-			<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="assets/js/script.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </body>
 </html>
