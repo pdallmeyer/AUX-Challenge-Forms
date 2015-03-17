@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <title>Forms Challenge MASTER</title>
+ 	<title>Forms Challenge MASTER</title>
   
-  <link rel="dns-prefetch" href="//ajax.googleapis.com">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+ 	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+ 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 
-<link rel="stylesheet" href="assets/css/styles.css">
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 
 
- <meta charset="UTF-8">
-<meta http-equiv="cleartype" content="on">
+	<meta charset="UTF-8">
+	<meta http-equiv="cleartype" content="on">
 
 </head>
 
@@ -83,7 +83,7 @@
 							<ul> <!-- ul payment information -->
 								<li>
 									<label for="card-number">Card Number</label>		
-									<input  type="text" class="card-number" required/>
+									<input  type="text" class="card-number" id="card-number" required/>
 										<fieldset class="creditcard-fieldset">
 										<legend class="legend-label">Credit Cards</legend>
 											<ul class="credit-cards"> <!-- cc radio list -->
@@ -113,7 +113,7 @@
 								<li>
 									<label for="security-code" >Security Code</label>
 									<input type="text" id="security-code" class="security-code" required />
-									<p class="secondary-pic"></p>
+									<p class="crv"></p>
 								</li>
 								<li>
 									<label for="expiration-date">
@@ -156,9 +156,13 @@
 		</form>
 	</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/js/jquery.creditCardValidator.js"></script>
 <script src="assets/js/script.js"></script>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+
+
 
 </body>
 </html>

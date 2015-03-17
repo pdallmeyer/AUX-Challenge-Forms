@@ -283,14 +283,13 @@ ul.credit-cards li label {
 }
 
 
- input[type="radio"] {
+input[type="radio"] {
 	position: absolute;
-	left: -999px;
+	left: -9999px;
+}
 
-} 
 
-
-.secondary-pic {
+.crv {
 	background: url('../images/sprite.png') no-repeat 0 -124px; 
 	width: 62px; height: 32px;
 	display: inline-block;
@@ -299,6 +298,14 @@ ul.credit-cards li label {
 	vertical-align: middle;
 }
 
+.crv.amex {
+	background: url('../images/sprite.png') no-repeat 0 -81px; 
+	width: 62px; height: 32px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+}
 
 /* -----------------credit card sprites -------------- */
 
@@ -371,96 +378,6 @@ button {
 
 
 
-
-
-
- input[type="radio"] {
-	display: none;
-} 
-
-*/
-
-
-/* -----------------credit card sprites unchecked-------------- */
-
-
-.sprite-amex label { 
-	background: url('../images/sprite.png') no-repeat -1px -40px;
-	width: 45px;
-	height: 30px;
-	}
-
-
-.sprite-visa label { 
-	background: url('../images/sprite.png') no-repeat -48px -40px; 
-	width: 45px;
-	height: 30px;
-}
-	
-
-.sprite-discover label { 
-	background: url('../images/sprite.png') no-repeat  -96px -40px; 
-	width: 45px;
-	height: 30px;
-}
-
-
-.sprite-mastercard label { 
-	background: url('../images/sprite.png') no-repeat -144px -40px;
-	width: 45px;
-	height: 30px;
-}
-
-
-/* -----------------credit card sprites checked-------------- */
-
-
-.sprite-amex input[type="radio"]:checked + label {
-  background: url('../images/sprite.png') no-repeat 0px 0; 
-  width: 45px;
-	height: 30px;
-}
-
-
-.sprite-visa input[type="radio"]:checked + label {
-  background: url('../images/sprite.png') no-repeat -48px 0;
-  width: 45px;
-	height: 30px;
- 
-}
-
-.sprite-discover input[type="radio"]:checked  + label {
-  background: url('../images/sprite.png') no-repeat -96px 0;
-  width: 45px;
-	height: 30px;
-}
-
-.sprite-mastercard input[type="radio"]:checked + label {
-  background: url('../images/sprite.png') no-repeat -144px 0;
-  width: 45px;
-	height: 30px;
-}
-
-
-
-/* -----------------button-------------- */
-
-button {
-	display: block;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	color: #ffffff;
-	background-color: #85a12f;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 10px;
-	font-family: "Merriweather";
-	font-size: 16px;
-	border: none;
-	}
 
 
 
