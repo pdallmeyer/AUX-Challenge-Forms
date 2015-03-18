@@ -1,8 +1,10 @@
 
+
 var $amex = $('#amex'),
 	$discover = $('#discover'),
 	$visa = $('#visa'),
 	$mastercard = $('#mastercard');
+	$csv = $('.csv');
 
 
 $(function() {
@@ -10,32 +12,66 @@ $(function() {
         console.log(result.card_type.name);
 
    		if (result.card_type.name === "amex") {
-   			 $amex.attr('checked', true);
+   			 $amex.prop('checked', true);
    		}
 
-    	
     	else if (result.card_type.name === "visa"){
-    		$visa.attr('checked', true);
+    		$visa.prop('checked', true);
     	}
 
     	else if (result.card_type.name === "discover") {
-    		$discover.attr('checked', true);
+    		$discover.prop('checked', true);
     	}
 
     	else if (result.card_type.name === "mastercard") {
-    		$mastercard.attr('checked', true);
+    		$mastercard.prop('checked', true);
     	}
-	
 
+    	changeCSV();
+	});
+
+	function changeCSV() {
+		if (amex.prop('checked' === true)) {
+			//csv.addClass('amex');
+			console.log("amex is checked")
+		}  
 		else {
-			alert("Nope!");
+			csv.removeClass('amex');
 		}
-    });
+	};
+
+//	function changeCSV() {
+//		if (amex.is(':checked')) {
+			//csv.addClass('amex');
+//			console.log("amex is checked")
+//		}  
+//		else {
+//			csv.removeClass('amex');
+//		}
+//	};
+//Modernizr.load ({
+//			test: Modernizr.input.required,
+//			yep: console.log('required works'),
+//			nope: ['vendor/jquery.validate.min.js'],
+
+//			complete: function () {
+//				if (!Modernizr.input.required) {
+//					$('form').each(function() {
+//						$(this).validate();
+//					});
+//				}
+//			}
 
 
-//function(change-crv){
-//	if $amex.attr('checked', true);
-//		crv.addClass('amex');}  
-
+//		});
 
 });
+
+		
+
+
+//});
+
+
+
+

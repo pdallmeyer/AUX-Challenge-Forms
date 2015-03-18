@@ -8,7 +8,7 @@
 
 body {
 	background-color: #b3e3ff;
-	font-family: "Open Sans";
+	font-family: "Open Sans", tahoma, sans-serif;
 	font-size: 1em;
 	}
 
@@ -31,7 +31,10 @@ body {
 	padding-left: 25px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-
+	box-shadow: inset 0px 56px 74px 0px rgba(60,141,166,0.53);
+	border-top-style: solid;
+	border-top-width: 1.5px;
+	border-color: #146c86;
 	}
 
 .step-containers { 
@@ -54,7 +57,7 @@ header {
 
 h1 {
 	padding-top:15px;
-	font-family: "Merriweather";
+	font-family: "Merriweather", Georgia, serif;
 	color: #FFFFFF;
 	letter-spacing: .05em;
 	line-height: .3em;
@@ -87,7 +90,7 @@ fieldset {
 
 
 .steps {
-	font-family: "Merriweather";
+	font-family: "Merriweather", tahoma, sans-serif;
 	font-weight: 700;
 	color: #0a5e78;
 
@@ -179,7 +182,7 @@ ol.circles-list > li:before {
 	height: 1.5em;
 	
 	font-size: 1.1em;
-	font-family: "Merriweather";
+	font-family: "Merriweather", Georgia, serif;
 	line-height: -3;
 	text-align: center;
 	color: #f5f5f5;
@@ -289,7 +292,7 @@ input[type="radio"] {
 }
 
 
-.crv {
+label.csv {
 	background: url('../images/sprite.png') no-repeat 0 -124px; 
 	width: 62px; height: 32px;
 	display: inline-block;
@@ -298,7 +301,7 @@ input[type="radio"] {
 	vertical-align: middle;
 }
 
-.crv.amex {
+label.csv .amex {
 	background: url('../images/sprite.png') no-repeat 0 -81px; 
 	width: 62px; height: 32px;
 	display: inline-block;
@@ -367,10 +370,15 @@ button {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border-radius: 10px;
-	font-family: "Merriweather";
+	font-family: "Merriweather", Georgia, serif;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
+	box-shadow: 0 1px 2px #aabd62;
+	border-color: #7b992b;
+	border-width: 2px;
+	border-style: solid;
+
 	}
 
 
